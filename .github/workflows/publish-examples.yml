@@ -62,14 +62,14 @@ jobs:
 
       - name: build frontend api, the plugin
         run: |
-          pnpm install && \
+          pnpm install
           pnpm build
         # change this to npm or pnpm depending on which one you use.
 
       - name: install dependencies of example app
         # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
         run: |
-          cd examples/react-app && \
+          cd examples/react-app
           pnpm install
         # change this to npm or pnpm depending on which one you use.
 
