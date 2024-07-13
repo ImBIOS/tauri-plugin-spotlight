@@ -61,8 +61,8 @@ jobs:
             ./examples/react-app/src-tauri
 
       - name: build frontend api, the plugin
-        run: \
-          pnpm i && \
+        run: |
+          pnpm install && \
           pnpm build
         # change this to npm or pnpm depending on which one you use.
 
